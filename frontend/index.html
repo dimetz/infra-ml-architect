@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Infra ML Architect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Infra ML Architect</h1>
+
+<div class="form">
+    <label>Users:</label>
+    <input id="users" type="number" value="800">
+
+    <label>IOPS:</label>
+    <input id="iops" type="number" value="20000">
+
+    <label>Throughput (MB/s):</label>
+    <input id="throughput" type="number" value="150">
+
+    <label>Latency (ms):</label>
+    <input id="latency" type="number" value="5">
+
+    <button onclick="calculate()">Calculate</button>
+</div>
+
+<div id="result"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

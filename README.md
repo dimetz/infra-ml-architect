@@ -1,22 +1,19 @@
-# infra-ml-architect
+# Infra ML Architect
 
-Структура репозитория
-infra-ml-architect/
-├── data/
-│   ├── dataset.json
-│   └── generate_dataset.py
-│
-├── services/
-│   └── api/
-│       ├── main.py
-│       └── requirements.txt
-│
-├── models/
-│   └── train_model.py
-│
-├── docker/
-│   └── Dockerfile
-│
-├── docker-compose.yml
-├── README.md
-└── .gitignore
+ML-driven infrastructure sizing system:
+- Storage (IOPS, RAID, disks)
+- SAN (protocol, speed)
+- Replication (sync/async)
+- Geo-distribution
+
+## Features
+- Synthetic enterprise dataset
+- ML model (RandomForest)
+- FastAPI service
+
+## Run
+
+```bash
+python data/generate_dataset.py
+python models/train_model.py
+docker-compose up --build

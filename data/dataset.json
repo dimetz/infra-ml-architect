@@ -1,0 +1,6 @@
+{
+  "users": 800,
+  "iops": 20000,
+  "throughput": 150,
+  "latency": 5
+}

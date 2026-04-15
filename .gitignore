@@ -1,0 +1,10 @@
+
+---
+
+# 7. .gitignore
+
+```gitignore
+__pycache__/
+*.pyc
+*.pkl
+.env
