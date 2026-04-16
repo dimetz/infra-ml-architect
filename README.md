@@ -14,9 +14,6 @@ ML-driven infrastructure sizing system:
 ## Run
 
 ```bash
-## python data/generate_dataset.py
-## python models/train_model.py
+python data/generate_dataset.py
+python models/train_model.py
 docker-compose up --build
-
-## Open
-http://localhost:3000
