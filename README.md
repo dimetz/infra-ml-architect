@@ -19,6 +19,4 @@ ML-driven infrastructure sizing system:
 docker-compose up --build
 
 ## Open
-
-```bash
 http://localhost:3000
