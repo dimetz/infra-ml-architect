@@ -28,7 +28,7 @@ ML-driven system for infrastructure sizing and architecture design.
 ```bash
 cd data
 python generate_dataset.py
-
+```
 ---
 
 ### 2. Train model
@@ -36,7 +36,7 @@ python generate_dataset.py
 ```bash
 cd ../models
 python train_model.py
-
+```
 ---
 
 ### 3. Run services
@@ -44,7 +44,7 @@ python train_model.py
 ```bash
 cd ..
 docker-compose up --build
-
+```
 ---
 
 ## Access UI
@@ -53,7 +53,7 @@ docker-compose up --build
 
 ```bash
 http://localhost:3000
-
+```
 ---
 
 ## UI Features
