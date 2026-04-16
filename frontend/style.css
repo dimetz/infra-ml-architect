@@ -8,10 +8,10 @@ body {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
+    width: 320px;
 }
 
-input {
+input, select {
     width: 100%;
     margin-bottom: 10px;
 }
@@ -19,4 +19,11 @@ input {
 button {
     width: 100%;
     padding: 10px;
+    background: #2d72d9;
+    color: white;
+    border: none;
+}
+
+h3 {
+    margin-top: 20px;
 }

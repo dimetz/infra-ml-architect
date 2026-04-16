@@ -1,19 +1,70 @@
 # Infra ML Architect
 
-ML-driven infrastructure sizing system:
-- Storage (IOPS, RAID, disks)
-- SAN (protocol, speed)
-- Replication (sync/async)
-- Geo-distribution
+ML-driven system for infrastructure sizing and architecture design.
 
 ## Features
-- Synthetic enterprise dataset
-- ML model (RandomForest)
-- FastAPI service
 
-## Run
+- Storage sizing (IOPS, RAID, disks)
+- SAN selection (FC / iSCSI)
+- Replication type (sync / async)
+- Geo-distribution support
+- Web UI (v2)
+
+---
+
+## Architecture
+
+- Backend: FastAPI
+- ML: RandomForest
+- Frontend: HTML + JS
+- Deployment: Docker
+
+---
+
+## Run project
+
+### 1. Generate dataset
 
 ```bash
-python data/generate_dataset.py
-python models/train_model.py
+cd data
+python generate_dataset.py
+
+---
+
+### 2. Train model
+
+```bash
+cd ../models
+python train_model.py
+
+---
+
+### 3. Run services
+
+```bash
+cd ..
 docker-compose up --build
+
+---
+
+## Access UI
+
+- Open in browser:
+
+```bash
+http://localhost:3000
+
+---
+
+## UI Features
+
+- Select workload type (OLTP / VDI / Analytics)
+- Configure geo-distribution
+- Set RPO and distance
+
+Get:
+- disk recommendation
+- replication type
+- SAN configuration
+
+---

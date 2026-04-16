@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Infra ML Architect</title>
+    <title>Infra ML Architect v2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,6 +10,14 @@
 <h1>Infra ML Architect</h1>
 
 <div class="form">
+
+    <label>Workload Type:</label>
+    <select id="workload">
+        <option value="oltp">OLTP</option>
+        <option value="vdi">VDI</option>
+        <option value="analytics">Analytics</option>
+    </select>
+
     <label>Users:</label>
     <input id="users" type="number" value="800">
 
@@ -21,6 +29,22 @@
 
     <label>Latency (ms):</label>
     <input id="latency" type="number" value="5">
+
+    <hr>
+
+    <h3>Geo / DR</h3>
+
+    <label>Geo Distributed:</label>
+    <select id="geo">
+        <option value="false">No</option>
+        <option value="true">Yes</option>
+    </select>
+
+    <label>Distance (km):</label>
+    <input id="distance" type="number" value="70">
+
+    <label>RPO (min):</label>
+    <input id="rpo" type="number" value="0">
 
     <button onclick="calculate()">Calculate</button>
 </div>
